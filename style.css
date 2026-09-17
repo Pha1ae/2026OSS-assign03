@@ -1,0 +1,22 @@
+@media (min-width: 768px) {
+    .sidebar {
+        position: sticky;
+        top: 0;
+        height: 100vh;
+        align-self: flex-start;
+        overflow-y: auto;
+    }
+}
+
+.card-cover {
+    min-height: 450px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.country-flag {
+    width: 40px;
+    height: auto;
+    display: block;
+}

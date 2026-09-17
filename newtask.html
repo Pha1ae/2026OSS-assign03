@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row min-vh-100">
+            <aside class="col-12 col-md-3 d-flex flex-column p-3 bg-body-tertiary sidebar">
+                <a href="/"
+                    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                    <svg class="bi pe-none me-2" width="40" height="32" aria-hidden="true">
+                        <use xlink:href="#bootstrap"></use>
+                    </svg>
+                    <span class="fs-4">Sidebar</span>
+                </a>
+                <hr>
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active" aria-current="page">
+                            <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
+                                <use xlink:href="#home"></use>
+                            </svg>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link link-body-emphasis">
+                            <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
+                                <use xlink:href="#speedometer2"></use>
+                            </svg>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link link-body-emphasis">
+                            <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
+                                <use xlink:href="#table"></use>
+                            </svg>
+                            Orders
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link link-body-emphasis">
+                            <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
+                                <use xlink:href="#grid"></use>
+                            </svg>
+                            Products
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="nav-link link-body-emphasis">
+                            <svg class="bi pe-none me-2" width="16" height="16" aria-hidden="true">
+                                <use xlink:href="#people-circle"></use>
+                            </svg>
+                            Customers
+                        </a>
+                    </li>
+                </ul>
+                <hr>
+
+                <div class="dropdown">
+                    <a href="#"
+                        class="d-flex align-items-center link-body-emphasis text-decoration-none dropdown-toggle"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
+                        <strong>mdo</strong>
+                    </a>
+                    <ul class="dropdown-menu text-small shadow">
+                        <li>
+                            <a class="dropdown-item" href="#">New project...</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Settings</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Profile</a>
+                        </li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Sign out</a>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+            <main class="col-12 col-md-9 p-4">
+                <h2 class="pb-2 border-bottom">Landscapes of different countries</h2>
+
+                <div class="row row-cols-1 align-items-stretch g-4 py-5">
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                            style="background-image: url(&#x27;japan.jpg&#x27;);">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="me-auto">
+                                        <img src="https://www.countryflags.com/wp-content/uploads/japan-flag-png-large.png" alt="Japan flag"
+                                            class="country-flag border border-white">
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                                            <use xlink:href=""></use>
+                                        </svg>
+                                        <small>Fuji san</small>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
+                                            <use xlink:href="#calendar3"></use>
+                                        </svg>
+                                        <small>3d</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                            style="background-image: url(&#x27;soul.jpg&#x27;);">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">
+                                    Much longer title that wraps to multiple lines
+                                </h3>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="me-auto">
+                                        <img src="https://www.countryflags.com/wp-content/uploads/south-korea-flag-png-large.png" alt="Kroean flag"
+                                            class="country-flag border border-white">
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                                            <use xlink:href="#geo-fill"></use>
+                                        </svg>
+                                        <small>Seoul</small>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
+                                            <use xlink:href="#calendar3"></use>
+                                        </svg>
+                                        <small>4d</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg"
+                            style="background-image: url(&#x27;shanghai.jpg&#x27;);">
+                            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                                <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
+                                <ul class="d-flex list-unstyled mt-auto">
+                                    <li class="me-auto">
+                                        <img src="https://www.countryflags.com/wp-content/uploads/china-flag-png-large.png" alt="China flag"
+                                            class="country-flag border border-white">
+                                    </li>
+                                    <li class="d-flex align-items-center me-3">
+                                        <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Location">
+                                            <use xlink:href="#geo-fill"></use>
+                                        </svg>
+                                        <small>Shanghai</small>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <svg class="bi me-2" width="1em" height="1em" role="img" aria-label="Duration">
+                                            <use xlink:href="#calendar3"></use>
+                                        </svg>
+                                        <small>5d</small>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
