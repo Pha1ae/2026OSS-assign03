@@ -39,6 +39,7 @@ body {
         position: sticky;
         top: 1rem;
         height: calc(100vh - 2rem);
+        width: clamp(13rem, 20vw, 16rem);
         align-self: flex-start;
         overflow-y: auto;
         border-bottom: 0;
@@ -67,12 +68,12 @@ body {
     pointer-events: none;
 }
 
-.card-cover > * {
+.card-cover>* {
     position: relative;
     z-index: 1;
 }
 
-.card-cover + .card-cover {
+.card-cover+.card-cover {
     margin-top: 1.5rem;
 }
 
@@ -81,19 +82,19 @@ body {
 }
 
 .card-japan {
-    background-image: url("japan.webp");
+    background-image: url("./img/mountfuji.webp");
 }
 
 .card-korea {
-    background-image: url("soul.webp");
+    background-image: url("./img/soul.webp");
 }
 
 .card-china {
-    background-image: url("shanghai.webp");
+    background-image: url("./img/shanghai.webp");
 }
 
 .card-iceland {
-    background-image: url("reynisfjara.webp");
+    background-image: url("./img/reynisfjara.webp");
 }
 
 .country-flag {

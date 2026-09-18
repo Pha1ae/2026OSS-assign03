@@ -1,121 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore landscapes from Mount Fuji, Seoul, Shanghai, and Reynisfjara.">
-    <title>World Landscapes</title>
+    <title>Your library | Bookshelf</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+
+    <link href="./my.css" rel="stylesheet">
+    <script src="./app.js" defer></script>
 </head>
-
-<body data-bs-spy="scroll" data-bs-target="#destination-nav" data-bs-root-margin="0px 0px -40%">
+<body data-page="index">
     <a class="visually-hidden-focusable skip-link" href="#main-content">Skip to content</a>
-
-    <div class="container-fluid p-3">
-        <div class="row g-0">
-
-            <aside class="col-12 col-md-3 d-flex flex-column p-4 bg-body-tertiary sidebar">
-                <a href="#overview" class="fs-4 fw-semibold link-body-emphasis text-decoration-none">
-                    World Landscapes
-                </a>
-                <p class="text-body-secondary small mt-2 mb-4">Four destinations. Four different views.</p>
-
-                <nav id="destination-nav" aria-label="Destinations">
-                    <p class="nav-label text-body-secondary small mb-2">EXPLORE</p>
-                    <ul class="nav nav-pills flex-row flex-md-column gap-2">
-                        <li class="nav-item">
-                            <a href="#overview" class="nav-link">Overview</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#japan" class="nav-link">Japan <span class="small d-none d-md-inline">/ Mount Fuji</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#korea" class="nav-link">South Korea <span class="small d-none d-md-inline">/ Seoul</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#china" class="nav-link">China <span class="small d-none d-md-inline">/ Shanghai</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#iceland" class="nav-link">Iceland <span class="small d-none d-md-inline">/ Reynisfjara</span></a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <div class="mt-auto pt-4">
-                    <hr>
-                    <p class="small text-body-secondary mb-2">Assignment 03 · Landscape gallery</p>
-                    <a href="#overview" class="small">Back to top ↑</a>
-                </div>
-            </aside>
-
-            <main id="main-content" class="col-12 col-md-9 p-3 p-lg-5" tabindex="-1">
-                <header id="overview" class="pb-4 mb-4 border-bottom">
-                    <p class="text-body-secondary small nav-label mb-2">A VISUAL JOURNEY</p>
-                    <h1 class="display-5 fw-semibold">Landscapes across borders</h1>
-                    <p class="lead text-body-secondary mb-0">
-                        From mountain scenery to city skylines, explore four places through their landscapes.
-                        Choose a destination from the navigation or scroll to discover each view.
-                    </p>
-                </header>
-
-                <section id="japan" class="card card-cover card-japan text-white border-0 rounded-4 shadow-sm justify-content-end p-4 p-lg-5"
-                    aria-labelledby="japan-title">
-                    <p class="small nav-label mb-2">01 / JAPAN</p>
-                    <h2 id="japan-title" class="display-6 fw-semibold">Mount Fuji</h2>
-                    <p class="card-description mb-4">A quiet moment in Japan's mountain scenery.</p>
-                    <div class="d-flex align-items-center flex-wrap gap-3 pt-3 border-top border-light-subtle">
-                        <img src="https://www.countryflags.com/wp-content/uploads/japan-flag-png-large.png"
-                            alt="Japan flag" class="country-flag border border-white" width="40" loading="lazy">
-                        <span>Mount Fuji, Japan</span>
-                        <span class="small ms-sm-auto">Mountain landscape</span>
-                    </div>
-                </section>
-
-                <section id="korea" class="card card-cover card-korea text-white border-0 rounded-4 shadow-sm justify-content-end p-4 p-lg-5"
-                    aria-labelledby="korea-title">
-                    <p class="small nav-label mb-2">02 / SOUTH KOREA</p>
-                    <h2 id="korea-title" class="display-6 fw-semibold">Seoul</h2>
-                    <p class="card-description mb-4">A glimpse of the city's streets and skyline.</p>
-                    <div class="d-flex align-items-center flex-wrap gap-3 pt-3 border-top border-light-subtle">
-                        <img src="https://www.countryflags.com/wp-content/uploads/south-korea-flag-png-large.png"
-                            alt="South Korean flag" class="country-flag border border-white" width="40" loading="lazy">
-                        <span>Seoul, South Korea</span>
-                        <span class="small ms-sm-auto">Cityscape</span>
-                    </div>
-                </section>
-
-                <section id="china" class="card card-cover card-china text-white border-0 rounded-4 shadow-sm justify-content-end p-4 p-lg-5"
-                    aria-labelledby="china-title">
-                    <p class="small nav-label mb-2">03 / CHINA</p>
-                    <h2 id="china-title" class="display-6 fw-semibold">Shanghai</h2>
-                    <p class="card-description mb-4">A view of the skyline along the Huangpu River.</p>
-                    <div class="d-flex align-items-center flex-wrap gap-3 pt-3 border-top border-light-subtle">
-                        <img src="https://www.countryflags.com/wp-content/uploads/china-flag-png-large.png"
-                            alt="China flag" class="country-flag border border-white" width="40" loading="lazy">
-                        <span>Shanghai, China</span>
-                        <span class="small ms-sm-auto">Waterfront skyline</span>
-                    </div>
-                </section>
-
-                <section id="iceland" class="card card-cover card-iceland text-white border-0 rounded-4 shadow-sm justify-content-end p-4 p-lg-5"
-                    aria-labelledby="iceland-title">
-                    <p class="small nav-label mb-2">04 / ICELAND</p>
-                    <h2 id="iceland-title" class="display-6 fw-semibold">Reynisfjara</h2>
-                    <p class="card-description mb-4">Black sand and Atlantic waves along Iceland's southern coast.</p>
-                    <div class="d-flex align-items-center flex-wrap gap-3 pt-3 border-top border-light-subtle">
-                        <img src="https://www.countryflags.com/wp-content/uploads/iceland-flag-png-large.png" alt="Iceland flag"
-                            class="country-flag border border-white" width="40" loading="lazy">
-                        <span>Reynisfjara, Iceland</span>
-                        <span class="small ms-sm-auto">Coastal landscape</span>
-                    </div>
-                </section>
-            </main>
+    <nav class="navbar bg-white border-bottom" aria-label="Main navigation">
+        <div class="container page-width d-flex flex-wrap gap-2">
+            <a class="navbar-brand fw-bold" href="./index.html">Bookshelf<span class="brand-dot">.</span></a>
+            <div class="nav gap-1">
+                <a class="nav-link active" href="./index.html" aria-current="page">Library</a>
+                <a class="nav-link " href="./add.html" >Add book</a>
+            </div>
         </div>
-    </div>
+    </nav>
+    <main id="main-content" class="container page-width py-4 py-md-5" tabindex="-1">
+        <header class="page-header mb-4">
+            <p class="eyebrow">YOUR PERSONAL LIBRARY</p>
+            <h1>Your library</h1>
+            <p class="text-body-secondary mb-0">Browse your collection, find a title, and keep every detail in one place.</p>
+        </header>
+        <div id="page-error" class="alert alert-danger" role="alert" hidden></div>
+        <noscript><p class="alert alert-warning">Please enable JavaScript to use this library.</p></noscript>
+        <section class="card" aria-labelledby="collection-heading">
+            <header class="card-header bg-white d-flex flex-wrap justify-content-between align-items-center gap-3 p-4">
+                <div>
+                    <h2 id="collection-heading" class="h5 mb-1">All books</h2>
+                    <p id="book-count" class="small text-body-secondary mb-0" aria-live="polite"></p>
+                </div>
+                <a href="./add.html" class="btn btn-primary">+ Add book</a>
+            </header>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+            <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                    <caption class="visually-hidden">Books in your library. Select a title to see all details.</caption>
+                    <thead><tr>
+                        <th scope="col">Title</th>
+                        <th scope="col">Author</th>
+                        <th scope="col">Publisher</th>
+                        <th scope="col">Year</th>
+                        <th scope="col">Category</th>
+                        <th scope="col" class="text-end">Details</th>
+                    </tr></thead>
+                    
+                    <tbody id="book-list"></tbody>
+                </table>
+            </div>
+            <p id="empty-state" class="text-center text-body-secondary p-5 mb-0" hidden>
+                No books yet. Select Add book to start your collection.
+            </p>
+        </section>
+    </main>
+    <footer class="container page-width site-footer">
+        <span>Bookshelf · A place for your next read</span>
+    </footer>
 </body>
-
 </html>
